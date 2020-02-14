@@ -22,6 +22,7 @@ describe("fetchBreedDescription", () => {
     fetchBreedDescription("Siberiaaaaaaan", (err, desc) => {
       // we expect no error for this scenario
       assert.equal(err, "error: null");
+      assert.equal(null, desc);
 
       done();
     });
